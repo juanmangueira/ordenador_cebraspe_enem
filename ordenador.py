@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df_tabela = pd.read_csv('dados_ambientais.csv')
+df_tabela = pd.read_csv('dados_cursos_2023/dados_.csv')
 colunas =   ('classificacao_negros',
             'classificacao_publica_rendamenor_autodeclara',
             'classificacao_publica_rendamenor_autodeclara_pcd',
@@ -21,8 +21,8 @@ for coluna in colunas:
 df_tabela = df_tabela[[ 'inscricao',
                         'nome',
                         'nf_selecao',
-                        'classificacao_su'
-                        ]
-                        ].sort_values(by=['classificacao_su'])
+                        'classificacao_su']
+                        ].sort_values(
+                        by=['classificacao_su'])
 
 print(df_tabela.head(50))
